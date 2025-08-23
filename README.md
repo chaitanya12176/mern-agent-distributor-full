@@ -1,7 +1,4 @@
-Perfect 👍
-Here’s a **sample README** tailored to your MERN Stack Machine Test. You can edit project name, video link, and add extra details as needed.
 
----
 
 # MERN Stack Machine Test – Admin, Agents & CSV Distribution
 
@@ -43,8 +40,7 @@ A MERN stack application that includes:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <your-repo-link>
-cd <project-folder>
+git : https://github.com/chaitanya12176/mern-agent-distributor-full.git
 ```
 
 ### 2️⃣ Install dependencies
@@ -98,7 +94,7 @@ Backend: `http://localhost:5000`
 
 ## 🎥 Demonstration
 
-📌 [Google Drive Video Link](https://drive.google.com/) *(Replace with your link)*
+📌google drive link: https://drive.google.com/file/d/1pIzl3T5Bl9fnHfA78v_q2Bgha-8XT0Xe/view?usp=sharing
 
 ---
 
@@ -112,6 +108,4 @@ Backend: `http://localhost:5000`
 
 ---
 
-👉 This format will make your submission **clear and professional**.
 
-Do you want me to also **add example screenshots** section in the README (with placeholders), so you can easily insert them after recording?
