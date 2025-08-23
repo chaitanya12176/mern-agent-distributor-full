@@ -64,9 +64,12 @@ npm install
 Create a `.env` file inside `backend/` with the following:
 
 ```
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+
+MONGO_URI=mongodb://127.0.0.1:27017/agent_distributor
 PORT=5000
+JWT_SECRET=supersecretjwtkey_change_me
+
+
 ```
 
 ### 4️⃣ Run the application
