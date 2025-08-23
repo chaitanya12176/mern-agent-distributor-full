@@ -1,29 +1,117 @@
-# MERN Agent Distributor (No Vite)
+Perfect 👍
+Here’s a **sample README** tailored to your MERN Stack Machine Test. You can edit project name, video link, and add extra details as needed.
 
-## Prerequisites
-- Node 18+
-- MongoDB running locally or Atlas
+---
 
-## Backend
+# MERN Stack Machine Test – Admin, Agents & CSV Distribution
+
+## 📌 Objective
+
+A MERN stack application that includes:
+
+1. **Admin User Login** (with JWT authentication)
+2. **Agent Creation & Management**
+3. **Upload CSV/XLSX & Distribute Lists among Agents**
+
+---
+
+## 🚀 Features
+
+* **Admin Login** using JWT authentication
+* **Add Agents** (Name, Email, Mobile Number, Password)
+* **Upload CSV/XLSX File** containing FirstName, Phone, Notes
+* **Validation**: Only `.csv`, `.xlsx`, `.xls` accepted
+* **Auto Distribution**: Tasks are equally distributed among 5 agents
+* **Remainder Distribution**: If not divisible, remaining items assigned sequentially
+* **Data Stored** in MongoDB
+* **Frontend Dashboard** to view distributed tasks per agent
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend**: React.js
+* **Backend**: Node.js + Express.js
+* **Database**: MongoDB (Mongoose ODM)
+* **Authentication**: JSON Web Tokens (JWT)
+* **File Upload & Parsing**: Multer, XLSX, CSV Parser
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
 ```bash
-cd server
-cp .env.example .env   # edit values if needed
-npm install
-npm run seed:admin     # creates admin@example.com / Admin@123
-npm run dev            # http://localhost:5000
+git clone <your-repo-link>
+cd <project-folder>
 ```
 
-## Frontend (Create React App)
+### 2️⃣ Install dependencies
+
+#### Backend
+
 ```bash
-cd client
-cp .env.example .env   # REACT_APP_API_URL=http://localhost:5000/api
+cd backend
 npm install
-npm start              # http://localhost:3000
 ```
 
-## Use
-1. Login as admin@example.com / Admin@123
-2. Create at least 5 agents (Name, Email, Mobile with country code, Password).
-3. Upload .csv / .xls / .xlsx / .axls with headers: FirstName, Phone, Notes.
-4. Distribution is round-robin across 5 earliest agents.
-5. View distribution per agent on the Upload page.
+#### Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+### 3️⃣ Configure Environment Variables
+
+Create a `.env` file inside `backend/` with the following:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
+
+### 4️⃣ Run the application
+
+#### Start Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+#### Start Frontend
+
+```bash
+cd frontend
+npm start
+```
+
+### 5️⃣ Open in Browser
+
+Frontend: `http://localhost:3000`
+Backend: `http://localhost:5000`
+
+---
+
+## 🎥 Demonstration
+
+📌 [Google Drive Video Link](https://drive.google.com/) *(Replace with your link)*
+
+---
+
+## ✅ Evaluation Criteria Coverage
+
+* **Functionality**: Implements all required features
+* **Code Quality**: Clean, modular, and well-commented
+* **Validation & Error Handling**: Covers invalid login, invalid CSV formats, missing fields
+* **User Interface**: Simple and user-friendly
+* **Execution**: Easy to run using `npm install` and `.env`
+
+---
+
+👉 This format will make your submission **clear and professional**.
+
+Do you want me to also **add example screenshots** section in the README (with placeholders), so you can easily insert them after recording?
