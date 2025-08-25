@@ -49,7 +49,7 @@ git : https://github.com/chaitanya12176/mern-agent-distributor-full.git
 
 ```bash
 cd server
-npm run dev
+npm install
 ```
 
 #### Frontend
@@ -77,14 +77,14 @@ JWT_SECRET=supersecretjwtkey_change_me
 #### Start Backend
 
 ```bash
-cd backend
+cd server
 npm run dev
 ```
 
 #### Start Frontend
 
 ```bash
-cd frontend
+cd client
 npm start
 ```
 
