@@ -48,14 +48,14 @@ git : https://github.com/chaitanya12176/mern-agent-distributor-full.git
 #### Backend
 
 ```bash
-cd backend
-npm install
+cd server
+npm run dev
 ```
 
 #### Frontend
 
 ```bash
-cd frontend
+cd clent
 npm install
 ```
 
