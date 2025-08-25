@@ -38,10 +38,11 @@ export default function Agents() {
   const deleteAgent = async (id) => {
     if (!window.confirm("Are you sure you want to delete this agent?")) return;
     try {
-      await api.delete(`/agents/${id}`);
+      const res = await api.delete(`/agents/${id}`);
       setAgents((prev) => prev.filter((a) => a._id !== id));
+      setSuccess(res.data?.message || "✅ Agent deleted successfully");
     } catch (err) {
-      alert("❌ Failed to delete agent");
+      setError(err.response?.data?.message || "❌ Failed to delete agent");
     }
   };
 
